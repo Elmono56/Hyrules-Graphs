@@ -11,7 +11,9 @@
 
 #include <QtCore/QVariant>
 #include <QtGui/QAction>
+#include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QComboBox>
 #include <QtWidgets/QGroupBox>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
@@ -32,12 +34,14 @@ public:
     QWidget *centralwidget;
     QLabel *label;
     QGroupBox *groupBox;
-    QPushButton *pushButton_11;
-    QPushButton *pushButton_12;
     QPushButton *pushButton_13;
     QPushButton *pushButton_14;
     QPushButton *pushButton_15;
     QPushButton *pushButton_16;
+    QComboBox *comboBox;
+    QComboBox *comboBox_3;
+    QLabel *label_12;
+    QLabel *label_13;
     QLabel *label_2;
     QLabel *label_3;
     QLabel *label_4;
@@ -55,6 +59,9 @@ public:
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName("MainWindow");
         MainWindow->resize(1280, 720);
+        QIcon icon;
+        icon.addFile(QString::fromUtf8("../build-Hyrules-Graphs-Desktop_Qt_6_4_1_MinGW_64_bit-Debug/img/icono.jpg"), QSize(), QIcon::Normal, QIcon::Off);
+        MainWindow->setWindowIcon(icon);
         actionIndicaciones = new QAction(MainWindow);
         actionIndicaciones->setObjectName("actionIndicaciones");
         actionSeleccionar_Origen = new QAction(MainWindow);
@@ -73,26 +80,52 @@ public:
         label->setPixmap(QPixmap(QString::fromUtf8("../build-Hyrules-Graphs-Desktop_Qt_6_4_1_MinGW_64_bit-Debug/img/mainFrame.jpg")));
         groupBox = new QGroupBox(centralwidget);
         groupBox->setObjectName("groupBox");
-        groupBox->setGeometry(QRect(880, 160, 291, 391));
+        groupBox->setGeometry(QRect(880, 160, 331, 391));
         groupBox->setAutoFillBackground(true);
-        pushButton_11 = new QPushButton(groupBox);
-        pushButton_11->setObjectName("pushButton_11");
-        pushButton_11->setGeometry(QRect(20, 40, 111, 29));
-        pushButton_12 = new QPushButton(groupBox);
-        pushButton_12->setObjectName("pushButton_12");
-        pushButton_12->setGeometry(QRect(150, 40, 111, 29));
         pushButton_13 = new QPushButton(groupBox);
         pushButton_13->setObjectName("pushButton_13");
-        pushButton_13->setGeometry(QRect(100, 120, 83, 29));
+        pushButton_13->setGeometry(QRect(110, 40, 83, 29));
         pushButton_14 = new QPushButton(groupBox);
         pushButton_14->setObjectName("pushButton_14");
-        pushButton_14->setGeometry(QRect(30, 280, 241, 29));
+        pushButton_14->setGeometry(QRect(30, 320, 271, 29));
         pushButton_15 = new QPushButton(groupBox);
         pushButton_15->setObjectName("pushButton_15");
-        pushButton_15->setGeometry(QRect(30, 230, 241, 29));
+        pushButton_15->setGeometry(QRect(30, 260, 271, 29));
         pushButton_16 = new QPushButton(groupBox);
         pushButton_16->setObjectName("pushButton_16");
-        pushButton_16->setGeometry(QRect(30, 180, 241, 29));
+        pushButton_16->setGeometry(QRect(30, 200, 271, 29));
+        comboBox = new QComboBox(groupBox);
+        comboBox->addItem(QString());
+        comboBox->addItem(QString());
+        comboBox->addItem(QString());
+        comboBox->addItem(QString());
+        comboBox->addItem(QString());
+        comboBox->addItem(QString());
+        comboBox->addItem(QString());
+        comboBox->addItem(QString());
+        comboBox->addItem(QString());
+        comboBox->addItem(QString());
+        comboBox->setObjectName("comboBox");
+        comboBox->setGeometry(QRect(30, 140, 111, 28));
+        comboBox_3 = new QComboBox(groupBox);
+        comboBox_3->addItem(QString());
+        comboBox_3->addItem(QString());
+        comboBox_3->addItem(QString());
+        comboBox_3->addItem(QString());
+        comboBox_3->addItem(QString());
+        comboBox_3->addItem(QString());
+        comboBox_3->addItem(QString());
+        comboBox_3->addItem(QString());
+        comboBox_3->addItem(QString());
+        comboBox_3->addItem(QString());
+        comboBox_3->setObjectName("comboBox_3");
+        comboBox_3->setGeometry(QRect(190, 140, 111, 28));
+        label_12 = new QLabel(groupBox);
+        label_12->setObjectName("label_12");
+        label_12->setGeometry(QRect(30, 90, 111, 20));
+        label_13 = new QLabel(groupBox);
+        label_13->setObjectName("label_13");
+        label_13->setGeometry(QRect(190, 90, 111, 20));
         label_2 = new QLabel(centralwidget);
         label_2->setObjectName("label_2");
         label_2->setGeometry(QRect(100, 190, 51, 20));
@@ -154,12 +187,34 @@ public:
         actionBuscar_por_menor_Coste_de_Tiempo->setText(QCoreApplication::translate("MainWindow", "Buscar por menor Coste de Tiempo", nullptr));
         label->setText(QString());
         groupBox->setTitle(QCoreApplication::translate("MainWindow", "Opciones", nullptr));
-        pushButton_11->setText(QCoreApplication::translate("MainWindow", "Seleccionar Origen", nullptr));
-        pushButton_12->setText(QCoreApplication::translate("MainWindow", "Seleccionar Destino", nullptr));
         pushButton_13->setText(QCoreApplication::translate("MainWindow", "Indicaciones", nullptr));
         pushButton_14->setText(QCoreApplication::translate("MainWindow", "Buscar por Menor Coste de Man\303\241", nullptr));
         pushButton_15->setText(QCoreApplication::translate("MainWindow", "Buscar por Menor Coste de Tiempo", nullptr));
         pushButton_16->setText(QCoreApplication::translate("MainWindow", "Buscar por Menor Cantidad de Transbordos", nullptr));
+        comboBox->setItemText(0, QCoreApplication::translate("MainWindow", "Villa Rico", nullptr));
+        comboBox->setItemText(1, QCoreApplication::translate("MainWindow", "Pueblo Gerudo", nullptr));
+        comboBox->setItemText(2, QCoreApplication::translate("MainWindow", "Villa Lurelin", nullptr));
+        comboBox->setItemText(3, QCoreApplication::translate("MainWindow", "Villa de Hateno", nullptr));
+        comboBox->setItemText(4, QCoreApplication::translate("MainWindow", "Villa Kakariko", nullptr));
+        comboBox->setItemText(5, QCoreApplication::translate("MainWindow", "Dominio de los Zora", nullptr));
+        comboBox->setItemText(6, QCoreApplication::translate("MainWindow", "Pueblo Tarrey", nullptr));
+        comboBox->setItemText(7, QCoreApplication::translate("MainWindow", "Ciudad Goron", nullptr));
+        comboBox->setItemText(8, QCoreApplication::translate("MainWindow", "Villa Korok", nullptr));
+        comboBox->setItemText(9, QCoreApplication::translate("MainWindow", "Castillo de Hyrule", nullptr));
+
+        comboBox_3->setItemText(0, QCoreApplication::translate("MainWindow", "Villa Rico", nullptr));
+        comboBox_3->setItemText(1, QCoreApplication::translate("MainWindow", "Pueblo Gerudo", nullptr));
+        comboBox_3->setItemText(2, QCoreApplication::translate("MainWindow", "Villa Lurelin", nullptr));
+        comboBox_3->setItemText(3, QCoreApplication::translate("MainWindow", "Villa de Hateno", nullptr));
+        comboBox_3->setItemText(4, QCoreApplication::translate("MainWindow", "Villa Kakariko", nullptr));
+        comboBox_3->setItemText(5, QCoreApplication::translate("MainWindow", "Dominio de los Zora", nullptr));
+        comboBox_3->setItemText(6, QCoreApplication::translate("MainWindow", "Pueblo Tarrey", nullptr));
+        comboBox_3->setItemText(7, QCoreApplication::translate("MainWindow", "Ciudad Goron", nullptr));
+        comboBox_3->setItemText(8, QCoreApplication::translate("MainWindow", "Villa Korok", nullptr));
+        comboBox_3->setItemText(9, QCoreApplication::translate("MainWindow", "Castillo de Hyrule", nullptr));
+
+        label_12->setText(QCoreApplication::translate("MainWindow", "Seleccionar Destino", nullptr));
+        label_13->setText(QCoreApplication::translate("MainWindow", "Seleccionar Origen", nullptr));
         label_2->setText(QCoreApplication::translate("MainWindow", "Villa Rico", nullptr));
         label_3->setText(QCoreApplication::translate("MainWindow", "Castillo de Hyrule", nullptr));
         label_4->setText(QCoreApplication::translate("MainWindow", "Pueblo Gerudo", nullptr));

@@ -13,6 +13,10 @@
   <property name="windowTitle">
    <string>Hyrules Graphs</string>
   </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../build-Hyrules-Graphs-Desktop_Qt_6_4_1_MinGW_64_bit-Debug/img/icono.jpg</normaloff>../build-Hyrules-Graphs-Desktop_Qt_6_4_1_MinGW_64_bit-Debug/img/icono.jpg</iconset>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label">
     <property name="geometry">
@@ -35,7 +39,7 @@
      <rect>
       <x>880</x>
       <y>160</y>
-      <width>291</width>
+      <width>331</width>
       <height>391</height>
      </rect>
     </property>
@@ -45,37 +49,11 @@
     <property name="title">
      <string>Opciones</string>
     </property>
-    <widget class="QPushButton" name="pushButton_11">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>40</y>
-       <width>111</width>
-       <height>29</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Seleccionar Origen</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_12">
-     <property name="geometry">
-      <rect>
-       <x>150</x>
-       <y>40</y>
-       <width>111</width>
-       <height>29</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Seleccionar Destino</string>
-     </property>
-    </widget>
     <widget class="QPushButton" name="pushButton_13">
      <property name="geometry">
       <rect>
-       <x>100</x>
-       <y>120</y>
+       <x>110</x>
+       <y>40</y>
        <width>83</width>
        <height>29</height>
       </rect>
@@ -88,8 +66,8 @@
      <property name="geometry">
       <rect>
        <x>30</x>
-       <y>280</y>
-       <width>241</width>
+       <y>320</y>
+       <width>271</width>
        <height>29</height>
       </rect>
      </property>
@@ -101,8 +79,8 @@
      <property name="geometry">
       <rect>
        <x>30</x>
-       <y>230</y>
-       <width>241</width>
+       <y>260</y>
+       <width>271</width>
        <height>29</height>
       </rect>
      </property>
@@ -114,13 +92,159 @@
      <property name="geometry">
       <rect>
        <x>30</x>
-       <y>180</y>
-       <width>241</width>
+       <y>200</y>
+       <width>271</width>
        <height>29</height>
       </rect>
      </property>
      <property name="text">
       <string>Buscar por Menor Cantidad de Transbordos</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>140</y>
+       <width>111</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>Villa Rico</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Pueblo Gerudo</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Villa Lurelin</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Villa de Hateno</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Villa Kakariko</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Dominio de los Zora</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Pueblo Tarrey</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Ciudad Goron</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Villa Korok</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Castillo de Hyrule</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="comboBox_3">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>140</y>
+       <width>111</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>Villa Rico</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Pueblo Gerudo</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Villa Lurelin</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Villa de Hateno</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Villa Kakariko</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Dominio de los Zora</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Pueblo Tarrey</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Ciudad Goron</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Villa Korok</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Castillo de Hyrule</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>90</y>
+       <width>111</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Seleccionar Destino</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>90</y>
+       <width>111</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Seleccionar Origen</string>
      </property>
     </widget>
    </widget>
