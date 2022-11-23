@@ -2,26 +2,26 @@
 #define _CIUDAD_ 1
 
 #include <iostream>
-#include <string>
+#include <QString>
 
 class Ciudad{
 
     private:
-        string nombre = "";
+        QString nombre = "";
         int Id = 0;
 
     public:
 
-        Ciudad(string pNombre, int pId){
+        Ciudad(QString pNombre, int pId){
             this->nombre = pNombre;
             this->Id = pId;
         }
 
-        void setNombre(string pNombre){
+        void setNombre(QString pNombre){
             this->nombre = pNombre;
         }
 
-        string getNombre(){
+        QString getNombre(){
             return this->nombre;
         }
 

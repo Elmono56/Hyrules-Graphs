@@ -53,6 +53,20 @@ int main() {
     grafoHyrule.addArco(66, 100, 10, 42);
     grafoHyrule.addArco(77, 88, 2, 5);
     grafoHyrule.addArco(99, 100, 3, 12);
+<<<<<<< Updated upstream
 
 
+=======
+    
+    grafoHyrule.transbordosMin(&RicoV, &LurelinV);
+    cout<<"-----------------------------"<<endl;
+    grafoHyrule.transbordosMin(&GerudoP, &GoronC);
+    cout<<"-----------------------------"<<endl;
+    grafoHyrule.transbordosMin(&KakarikoV, &GerudoP);
+    cout<<"-----------------------------"<<endl;
+    cout<<"-----------------------------"<<endl;
+    printMatrices();
+    
+    
+>>>>>>> Stashed changes
 }
