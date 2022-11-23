@@ -19,14 +19,11 @@ int main() {
     //Además, debe permitir buscar rutas entre dos torres quiera y encontrar la mejor ruta por duración mínima, costo mínimo o menor cantidad de trasbordos. 
     //Es importante señalar que las rutas son bidireccionales.
 
-
-
-
     Grafo grafoHyrule = Grafo();
 
     Ciudad RicoV = Ciudad("Villa Rico", 11);
     Ciudad GerudoP = Ciudad("Pueblo de Gerudo", 22);
-    Ciudad VillaL = Ciudad("Villa Lurelin", 33);
+    Ciudad LurelinV = Ciudad("Villa Lurelin", 33);
     Ciudad HatenoV = Ciudad("Villa de Hateno", 44);
     Ciudad KakarikoV = Ciudad("Villa Kakariko", 55);
     Ciudad ZorasD = Ciudad("Dominio de los Zora", 66);
@@ -35,7 +32,7 @@ int main() {
     Ciudad KorokV = Ciudad("Villa Korok", 99);
     Ciudad HyruleC = Ciudad("Castillo de Hyrule", 100);
 
-    Ciudad Ciudades[] = {RicoV, GerudoP, VillaL, HatenoV, KakarikoV, ZorasD, TarreyT, GoronC, KorokV, HyruleC};
+    Ciudad Ciudades[] = {RicoV, GerudoP, LurelinV, HatenoV, KakarikoV, ZorasD, TarreyT, GoronC, KorokV, HyruleC};
 
     for(int i=0; i<10; i++) {
         grafoHyrule.addNodo(&Ciudades[i]);
@@ -53,6 +50,15 @@ int main() {
     grafoHyrule.addArco(66, 100, 10, 42);
     grafoHyrule.addArco(77, 88, 2, 5);
     grafoHyrule.addArco(99, 100, 3, 12);
-
-
+    
+    grafoHyrule.transbordosMin(&RicoV, &LurelinV);
+    cout<<"-----------------------------"<<endl;
+    grafoHyrule.transbordosMin(&GerudoP, &GoronC);
+    cout<<"-----------------------------"<<endl;
+    grafoHyrule.transbordosMin(&KakarikoV, &GerudoP);
+    cout<<"-----------------------------"<<endl;
+    cout<<"-----------------------------"<<endl;
+    
+    
+    
 }
