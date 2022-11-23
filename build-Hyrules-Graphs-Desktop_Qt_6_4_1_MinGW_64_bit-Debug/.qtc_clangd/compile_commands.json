@@ -360,10 +360,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "D:\\Todo\\QT\\Hyrules-Graphs\\build-Hyrules-Graphs-Desktop_Qt_6_4_1_MinGW_64_bit-Debug\\ui_instrucciones.h"
+        "D:\\Todo\\QT\\Hyrules-Graphs\\build-Hyrules-Graphs-Desktop_Qt_6_4_1_MinGW_64_bit-Debug\\ui_mainwindow.h"
     ],
     "directory": "D:/Todo/QT/Hyrules-Graphs/build-Hyrules-Graphs-Desktop_Qt_6_4_1_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "D:/Todo/QT/Hyrules-Graphs/build-Hyrules-Graphs-Desktop_Qt_6_4_1_MinGW_64_bit-Debug/ui_instrucciones.h"
+    "file": "D:/Todo/QT/Hyrules-Graphs/build-Hyrules-Graphs-Desktop_Qt_6_4_1_MinGW_64_bit-Debug/ui_mainwindow.h"
 },
 {
     "arguments": [
@@ -421,9 +421,9 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "D:\\Todo\\QT\\Hyrules-Graphs\\build-Hyrules-Graphs-Desktop_Qt_6_4_1_MinGW_64_bit-Debug\\ui_mainwindow.h"
+        "D:\\Todo\\QT\\Hyrules-Graphs\\build-Hyrules-Graphs-Desktop_Qt_6_4_1_MinGW_64_bit-Debug\\ui_instrucciones.h"
     ],
     "directory": "D:/Todo/QT/Hyrules-Graphs/build-Hyrules-Graphs-Desktop_Qt_6_4_1_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "D:/Todo/QT/Hyrules-Graphs/build-Hyrules-Graphs-Desktop_Qt_6_4_1_MinGW_64_bit-Debug/ui_mainwindow.h"
+    "file": "D:/Todo/QT/Hyrules-Graphs/build-Hyrules-Graphs-Desktop_Qt_6_4_1_MinGW_64_bit-Debug/ui_instrucciones.h"
 }
 ]

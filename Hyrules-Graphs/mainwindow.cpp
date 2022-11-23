@@ -21,3 +21,10 @@ void MainWindow::on_pushButton_13_clicked()
     i.exec();
 }
 
+
+void MainWindow::on_pushButton_16_clicked()
+{
+    QString origen = ui->comboBox->currentText();
+    QString destino = ui->comboBox_3->currentText();
+}
+
