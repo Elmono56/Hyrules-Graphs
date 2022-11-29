@@ -11,15 +11,23 @@ CONFIG += c++17
 SOURCES += \
     instrucciones.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    mostrarbusqueda.cpp
 
 HEADERS += \
+    arco.h \
+    ciudad.h \
+    contenido.h \
+    grafo.h \
     instrucciones.h \
-    mainwindow.h
+    mainwindow.h \
+    mostrarbusqueda.h \
+    nodografo.h
 
 FORMS += \
     instrucciones.ui \
-    mainwindow.ui
+    mainwindow.ui \
+    mostrarbusqueda.ui
 
 TRANSLATIONS += \
     Hyrules-Graphs_es_CR.ts

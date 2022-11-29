@@ -11,19 +11,27 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Indicaciones</string>
+   <string>Instrucciones</string>
   </property>
-  <widget class="QPushButton" name="pushButton">
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../build-Hyrules-Graphs-Desktop_Qt_6_4_1_MinGW_64_bit-Debug/img/icono.jpg</normaloff>../build-Hyrules-Graphs-Desktop_Qt_6_4_1_MinGW_64_bit-Debug/img/icono.jpg</iconset>
+  </property>
+  <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>140</x>
-     <y>150</y>
-     <width>83</width>
-     <height>29</height>
+     <x>0</x>
+     <y>10</y>
+     <width>391</width>
+     <height>281</height>
     </rect>
    </property>
    <property name="text">
-    <string>Hola</string>
+    <string>¡Bienvenido al Reino de Hyrule! 
+En el mapa se indicarán distintas ciudades,
+ las cuales a su vez contienen templos que permiten viajar entre ellas. 
+Para consultar el coste de maná, tiempo o cantidad menor de transbordos,
+seleccione una de las ciudades y presione el botón correspondiente.</string>
    </property>
   </widget>
  </widget>

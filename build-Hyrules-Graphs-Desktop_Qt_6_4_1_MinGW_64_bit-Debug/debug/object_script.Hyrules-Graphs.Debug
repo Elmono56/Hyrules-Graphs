@@ -1,0 +1,12 @@
+debug/buscarmenormana.o
+debug/buscarmenortiempo.o
+debug/instrucciones.o
+debug/main.o
+debug/mainwindow.o
+debug/mostrarbusqueda.o
+debug/qrc_qmake_qmake_qm_files.o
+debug/moc_buscarmenormana.o
+debug/moc_buscarmenortiempo.o
+debug/moc_instrucciones.o
+debug/moc_mainwindow.o
+debug/moc_mostrarbusqueda.o

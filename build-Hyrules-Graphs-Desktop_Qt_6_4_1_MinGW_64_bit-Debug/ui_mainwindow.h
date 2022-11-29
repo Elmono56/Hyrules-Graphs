@@ -80,7 +80,7 @@ public:
         label->setPixmap(QPixmap(QString::fromUtf8("../build-Hyrules-Graphs-Desktop_Qt_6_4_1_MinGW_64_bit-Debug/img/mainFrame.jpg")));
         groupBox = new QGroupBox(centralwidget);
         groupBox->setObjectName("groupBox");
-        groupBox->setGeometry(QRect(880, 160, 331, 391));
+        groupBox->setGeometry(QRect(860, 160, 351, 491));
         groupBox->setAutoFillBackground(true);
         pushButton_13 = new QPushButton(groupBox);
         pushButton_13->setObjectName("pushButton_13");
@@ -187,12 +187,12 @@ public:
         actionBuscar_por_menor_Coste_de_Tiempo->setText(QCoreApplication::translate("MainWindow", "Buscar por menor Coste de Tiempo", nullptr));
         label->setText(QString());
         groupBox->setTitle(QCoreApplication::translate("MainWindow", "Opciones", nullptr));
-        pushButton_13->setText(QCoreApplication::translate("MainWindow", "Indicaciones", nullptr));
+        pushButton_13->setText(QCoreApplication::translate("MainWindow", "Instrucciones", nullptr));
         pushButton_14->setText(QCoreApplication::translate("MainWindow", "Buscar por Menor Coste de Man\303\241", nullptr));
         pushButton_15->setText(QCoreApplication::translate("MainWindow", "Buscar por Menor Coste de Tiempo", nullptr));
         pushButton_16->setText(QCoreApplication::translate("MainWindow", "Buscar por Menor Cantidad de Transbordos", nullptr));
         comboBox->setItemText(0, QCoreApplication::translate("MainWindow", "Villa Rico", nullptr));
-        comboBox->setItemText(1, QCoreApplication::translate("MainWindow", "Pueblo Gerudo", nullptr));
+        comboBox->setItemText(1, QCoreApplication::translate("MainWindow", "Pueblo de Gerudo", nullptr));
         comboBox->setItemText(2, QCoreApplication::translate("MainWindow", "Villa Lurelin", nullptr));
         comboBox->setItemText(3, QCoreApplication::translate("MainWindow", "Villa de Hateno", nullptr));
         comboBox->setItemText(4, QCoreApplication::translate("MainWindow", "Villa Kakariko", nullptr));
@@ -203,7 +203,7 @@ public:
         comboBox->setItemText(9, QCoreApplication::translate("MainWindow", "Castillo de Hyrule", nullptr));
 
         comboBox_3->setItemText(0, QCoreApplication::translate("MainWindow", "Villa Rico", nullptr));
-        comboBox_3->setItemText(1, QCoreApplication::translate("MainWindow", "Pueblo Gerudo", nullptr));
+        comboBox_3->setItemText(1, QCoreApplication::translate("MainWindow", "Pueblo de Gerudo", nullptr));
         comboBox_3->setItemText(2, QCoreApplication::translate("MainWindow", "Villa Lurelin", nullptr));
         comboBox_3->setItemText(3, QCoreApplication::translate("MainWindow", "Villa de Hateno", nullptr));
         comboBox_3->setItemText(4, QCoreApplication::translate("MainWindow", "Villa Kakariko", nullptr));
@@ -217,7 +217,7 @@ public:
         label_13->setText(QCoreApplication::translate("MainWindow", "Seleccionar Origen", nullptr));
         label_2->setText(QCoreApplication::translate("MainWindow", "Villa Rico", nullptr));
         label_3->setText(QCoreApplication::translate("MainWindow", "Castillo de Hyrule", nullptr));
-        label_4->setText(QCoreApplication::translate("MainWindow", "Pueblo Gerudo", nullptr));
+        label_4->setText(QCoreApplication::translate("MainWindow", "Pueblo de Gerudo", nullptr));
         label_5->setText(QCoreApplication::translate("MainWindow", "Villa Kakariko", nullptr));
         label_6->setText(QCoreApplication::translate("MainWindow", "Dominio de los Zora", nullptr));
         label_7->setText(QCoreApplication::translate("MainWindow", "Pueblo Tarrey", nullptr));

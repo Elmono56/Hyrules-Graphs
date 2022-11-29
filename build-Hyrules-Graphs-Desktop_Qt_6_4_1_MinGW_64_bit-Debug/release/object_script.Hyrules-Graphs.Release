@@ -1,0 +1,12 @@
+release/buscarmenormana.o
+release/buscarmenortiempo.o
+release/instrucciones.o
+release/main.o
+release/mainwindow.o
+release/mostrarbusqueda.o
+release/qrc_qmake_qmake_qm_files.o
+release/moc_buscarmenormana.o
+release/moc_buscarmenortiempo.o
+release/moc_instrucciones.o
+release/moc_mainwindow.o
+release/moc_mostrarbusqueda.o

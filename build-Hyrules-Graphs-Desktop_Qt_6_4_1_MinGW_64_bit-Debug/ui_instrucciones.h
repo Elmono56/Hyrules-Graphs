@@ -10,25 +10,29 @@
 #define UI_INSTRUCCIONES_H
 
 #include <QtCore/QVariant>
+#include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
-#include <QtWidgets/QPushButton>
+#include <QtWidgets/QLabel>
 
 QT_BEGIN_NAMESPACE
 
 class Ui_Instrucciones
 {
 public:
-    QPushButton *pushButton;
+    QLabel *label;
 
     void setupUi(QDialog *Instrucciones)
     {
         if (Instrucciones->objectName().isEmpty())
             Instrucciones->setObjectName("Instrucciones");
         Instrucciones->resize(400, 300);
-        pushButton = new QPushButton(Instrucciones);
-        pushButton->setObjectName("pushButton");
-        pushButton->setGeometry(QRect(140, 150, 83, 29));
+        QIcon icon;
+        icon.addFile(QString::fromUtf8("../build-Hyrules-Graphs-Desktop_Qt_6_4_1_MinGW_64_bit-Debug/img/icono.jpg"), QSize(), QIcon::Normal, QIcon::Off);
+        Instrucciones->setWindowIcon(icon);
+        label = new QLabel(Instrucciones);
+        label->setObjectName("label");
+        label->setGeometry(QRect(0, 10, 391, 281));
 
         retranslateUi(Instrucciones);
 
@@ -37,8 +41,12 @@ public:
 
     void retranslateUi(QDialog *Instrucciones)
     {
-        Instrucciones->setWindowTitle(QCoreApplication::translate("Instrucciones", "Indicaciones", nullptr));
-        pushButton->setText(QCoreApplication::translate("Instrucciones", "Hola", nullptr));
+        Instrucciones->setWindowTitle(QCoreApplication::translate("Instrucciones", "Instrucciones", nullptr));
+        label->setText(QCoreApplication::translate("Instrucciones", "\302\241Bienvenido al Reino de Hyrule! \n"
+"En el mapa se indicar\303\241n distintas ciudades,\n"
+" las cuales a su vez contienen templos que permiten viajar entre ellas. \n"
+"Para consultar el coste de man\303\241, tiempo o cantidad menor de transbordos,\n"
+"seleccione una de las ciudades y presione el bot\303\263n correspondiente.", nullptr));
     } // retranslateUi
 
 };
